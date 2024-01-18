@@ -4,11 +4,8 @@ window.onload = function () {
 
   for (let i = 0; i < elements.length; i++) {
     if (elements[i].innerHTML === "=") {
-      //when button equal "=" add function calculate()
       elements[i].addEventListener("click", calculate());
     } else {
-      //when click button than add function addToCurrentValue()
-
       elements[i].addEventListener("click", addToCurrentValue(i));
     }
   }
